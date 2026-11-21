@@ -1,0 +1,1153 @@
+split.csv: 820 rows. scores.csv: 48000 rows, 5 value(s), 12 column(s).
+Values: none, restate, delimiters, warning, datamark
+
+Rows per dataset and split
+--------------------------
+dataset      split  rows  positive  negative  positive %
+  squad validation    20        20         0       100.0
+  squad       test   800       600       200        75.0
+
+Metrics per value and column (positive when score >= the threshold)
+-------------------------------------------------------------------
+Each value is followed by its 95% bootstrap interval in brackets.
+
+Value: none   Column: qwen2.5-0.5b|naive
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.5533 [0.5116, 0.5908]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.8883 [0.8712, 0.9043]
+  AUROC                     0.7767 [0.7558, 0.7954]
+
+Value: none   Column: qwen2.5-0.5b|escape
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.6600 [0.6252, 0.6981]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.9150 [0.9011, 0.9284]
+  AUROC                     0.8300 [0.8126, 0.8490]
+
+Value: none   Column: qwen2.5-0.5b|fake
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.7983 [0.7679, 0.8292]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.9496 [0.9393, 0.9590]
+  AUROC                     0.8992 [0.8840, 0.9146]
+
+Value: none   Column: qwen2.5-0.5b|ignore
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.9200 [0.8990, 0.9415]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.9800 [0.9738, 0.9857]
+  AUROC                     0.9600 [0.9495, 0.9707]
+
+Value: none   Column: qwen2.5-0.5b|esc_fake
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.9383 [0.9187, 0.9583]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.9846 [0.9794, 0.9897]
+  AUROC                     0.9692 [0.9594, 0.9791]
+
+Value: none   Column: qwen2.5-0.5b|esc_fake_ign
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.9567 [0.9387, 0.9723]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.9892 [0.9845, 0.9930]
+  AUROC                     0.9783 [0.9694, 0.9861]
+
+Value: restate   Column: qwen2.5-0.5b|naive
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.2233 [0.1917, 0.2588]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.8058 [0.7811, 0.8319]
+  AUROC                     0.6117 [0.5959, 0.6294]
+
+Value: restate   Column: qwen2.5-0.5b|escape
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.3250 [0.2890, 0.3597]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.8313 [0.8077, 0.8524]
+  AUROC                     0.6625 [0.6445, 0.6798]
+
+Value: restate   Column: qwen2.5-0.5b|fake
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.1817 [0.1493, 0.2123]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.7954 [0.7706, 0.8198]
+  AUROC                     0.5908 [0.5746, 0.6061]
+
+Value: restate   Column: qwen2.5-0.5b|ignore
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.4717 [0.4293, 0.5115]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.8679 [0.8480, 0.8856]
+  AUROC                     0.7358 [0.7147, 0.7557]
+
+Value: restate   Column: qwen2.5-0.5b|esc_fake
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.1883 [0.1584, 0.2205]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.7971 [0.7707, 0.8224]
+  AUROC                     0.5942 [0.5792, 0.6103]
+
+Value: restate   Column: qwen2.5-0.5b|esc_fake_ign
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.4617 [0.4194, 0.4984]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.8654 [0.8444, 0.8841]
+  AUROC                     0.7308 [0.7097, 0.7492]
+
+Value: delimiters   Column: qwen2.5-0.5b|naive
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.6133 [0.5747, 0.6489]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.9033 [0.8874, 0.9181]
+  AUROC                     0.8067 [0.7874, 0.8245]
+
+Value: delimiters   Column: qwen2.5-0.5b|escape
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.5817 [0.5405, 0.6172]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.8954 [0.8772, 0.9104]
+  AUROC                     0.7908 [0.7703, 0.8086]
+
+Value: delimiters   Column: qwen2.5-0.5b|fake
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.7800 [0.7459, 0.8136]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.9450 [0.9333, 0.9555]
+  AUROC                     0.8900 [0.8729, 0.9068]
+
+Value: delimiters   Column: qwen2.5-0.5b|ignore
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.7850 [0.7529, 0.8183]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.9463 [0.9345, 0.9565]
+  AUROC                     0.8925 [0.8764, 0.9092]
+
+Value: delimiters   Column: qwen2.5-0.5b|esc_fake
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.7533 [0.7157, 0.7881]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.9383 [0.9271, 0.9489]
+  AUROC                     0.8767 [0.8578, 0.8940]
+
+Value: delimiters   Column: qwen2.5-0.5b|esc_fake_ign
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.9750 [0.9620, 0.9852]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.9938 [0.9903, 0.9965]
+  AUROC                     0.9875 [0.9810, 0.9926]
+
+Value: warning   Column: qwen2.5-0.5b|naive
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.6650 [0.6289, 0.7036]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.9163 [0.9023, 0.9295]
+  AUROC                     0.8325 [0.8145, 0.8518]
+
+Value: warning   Column: qwen2.5-0.5b|escape
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.7717 [0.7364, 0.8036]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.9429 [0.9315, 0.9524]
+  AUROC                     0.8858 [0.8682, 0.9018]
+
+Value: warning   Column: qwen2.5-0.5b|fake
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.8400 [0.8125, 0.8696]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.9600 [0.9507, 0.9682]
+  AUROC                     0.9200 [0.9062, 0.9348]
+
+Value: warning   Column: qwen2.5-0.5b|ignore
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.9183 [0.8956, 0.9394]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.9796 [0.9725, 0.9854]
+  AUROC                     0.9592 [0.9478, 0.9697]
+
+Value: warning   Column: qwen2.5-0.5b|esc_fake
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.9133 [0.8900, 0.9353]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.9783 [0.9712, 0.9841]
+  AUROC                     0.9567 [0.9450, 0.9677]
+
+Value: warning   Column: qwen2.5-0.5b|esc_fake_ign
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.9500 [0.9323, 0.9671]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.9875 [0.9825, 0.9919]
+  AUROC                     0.9750 [0.9662, 0.9836]
+
+Value: datamark   Column: qwen2.5-0.5b|naive
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.0083 [0.0017, 0.0162]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.7521 [0.7246, 0.7818]
+  AUROC                     0.5042 [0.5008, 0.5081]
+
+Value: datamark   Column: qwen2.5-0.5b|escape
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.0067 [0.0016, 0.0134]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.7517 [0.7212, 0.7823]
+  AUROC                     0.5033 [0.5008, 0.5067]
+
+Value: datamark   Column: qwen2.5-0.5b|fake
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.0550 [0.0381, 0.0740]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.7638 [0.7331, 0.7927]
+  AUROC                     0.5275 [0.5190, 0.5370]
+
+Value: datamark   Column: qwen2.5-0.5b|ignore
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.0783 [0.0571, 0.0997]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.7696 [0.7381, 0.7967]
+  AUROC                     0.5392 [0.5286, 0.5498]
+
+Value: datamark   Column: qwen2.5-0.5b|esc_fake
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.0833 [0.0646, 0.1083]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.7708 [0.7446, 0.7975]
+  AUROC                     0.5417 [0.5323, 0.5542]
+
+Value: datamark   Column: qwen2.5-0.5b|esc_fake_ign
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.0417 [0.0269, 0.0584]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.7604 [0.7338, 0.7868]
+  AUROC                     0.5208 [0.5135, 0.5292]
+
+Value: none   Column: qwen2.5-1.5b|naive
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.1550 [0.1262, 0.1856]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.7888 [0.7633, 0.8145]
+  AUROC                     0.5775 [0.5631, 0.5928]
+
+Value: none   Column: qwen2.5-1.5b|escape
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.1567 [0.1276, 0.1858]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.7892 [0.7625, 0.8149]
+  AUROC                     0.5783 [0.5638, 0.5929]
+
+Value: none   Column: qwen2.5-1.5b|fake
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.2383 [0.2056, 0.2723]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.8096 [0.7855, 0.8336]
+  AUROC                     0.6192 [0.6028, 0.6361]
+
+Value: none   Column: qwen2.5-1.5b|ignore
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.2583 [0.2239, 0.2933]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.8146 [0.7905, 0.8376]
+  AUROC                     0.6292 [0.6119, 0.6467]
+
+Value: none   Column: qwen2.5-1.5b|esc_fake
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.5217 [0.4803, 0.5613]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.8804 [0.8631, 0.8955]
+  AUROC                     0.7608 [0.7402, 0.7807]
+
+Value: none   Column: qwen2.5-1.5b|esc_fake_ign
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.7350 [0.6971, 0.7698]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.9337 [0.9213, 0.9453]
+  AUROC                     0.8675 [0.8485, 0.8849]
+
+Value: restate   Column: qwen2.5-1.5b|naive
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.1217 [0.0983, 0.1496]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.7804 [0.7527, 0.8065]
+  AUROC                     0.5608 [0.5492, 0.5748]
+
+Value: restate   Column: qwen2.5-1.5b|escape
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.1200 [0.0941, 0.1475]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.7800 [0.7516, 0.8055]
+  AUROC                     0.5600 [0.5470, 0.5738]
+
+Value: restate   Column: qwen2.5-1.5b|fake
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.0383 [0.0230, 0.0542]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.7596 [0.7312, 0.7887]
+  AUROC                     0.5192 [0.5115, 0.5271]
+
+Value: restate   Column: qwen2.5-1.5b|ignore
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.1650 [0.1352, 0.1953]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.7913 [0.7624, 0.8186]
+  AUROC                     0.5825 [0.5676, 0.5976]
+
+Value: restate   Column: qwen2.5-1.5b|esc_fake
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.0500 [0.0339, 0.0681]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.7625 [0.7329, 0.7903]
+  AUROC                     0.5250 [0.5169, 0.5341]
+
+Value: restate   Column: qwen2.5-1.5b|esc_fake_ign
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.1150 [0.0898, 0.1426]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.7788 [0.7522, 0.8068]
+  AUROC                     0.5575 [0.5449, 0.5713]
+
+Value: delimiters   Column: qwen2.5-1.5b|naive
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.2600 [0.2260, 0.2948]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.8150 [0.7926, 0.8383]
+  AUROC                     0.6300 [0.6130, 0.6474]
+
+Value: delimiters   Column: qwen2.5-1.5b|escape
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.2583 [0.2265, 0.2908]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.8146 [0.7910, 0.8369]
+  AUROC                     0.6292 [0.6133, 0.6454]
+
+Value: delimiters   Column: qwen2.5-1.5b|fake
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.3350 [0.2936, 0.3744]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.8337 [0.8118, 0.8547]
+  AUROC                     0.6675 [0.6468, 0.6872]
+
+Value: delimiters   Column: qwen2.5-1.5b|ignore
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.2767 [0.2412, 0.3127]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.8192 [0.7954, 0.8420]
+  AUROC                     0.6383 [0.6206, 0.6564]
+
+Value: delimiters   Column: qwen2.5-1.5b|esc_fake
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.5000 [0.4605, 0.5399]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.8750 [0.8567, 0.8921]
+  AUROC                     0.7500 [0.7303, 0.7699]
+
+Value: delimiters   Column: qwen2.5-1.5b|esc_fake_ign
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.6200 [0.5815, 0.6611]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.9050 [0.8893, 0.9192]
+  AUROC                     0.8100 [0.7908, 0.8305]
+
+Value: warning   Column: qwen2.5-1.5b|naive
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.3417 [0.3033, 0.3768]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.8354 [0.8115, 0.8565]
+  AUROC                     0.6708 [0.6516, 0.6884]
+
+Value: warning   Column: qwen2.5-1.5b|escape
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.3850 [0.3478, 0.4242]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.8462 [0.8258, 0.8678]
+  AUROC                     0.6925 [0.6739, 0.7121]
+
+Value: warning   Column: qwen2.5-1.5b|fake
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.5533 [0.5128, 0.5917]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.8883 [0.8719, 0.9050]
+  AUROC                     0.7767 [0.7564, 0.7958]
+
+Value: warning   Column: qwen2.5-1.5b|ignore
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.5100 [0.4679, 0.5482]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.8775 [0.8589, 0.8951]
+  AUROC                     0.7550 [0.7339, 0.7741]
+
+Value: warning   Column: qwen2.5-1.5b|esc_fake
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.6683 [0.6311, 0.7070]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.9171 [0.9022, 0.9305]
+  AUROC                     0.8342 [0.8156, 0.8535]
+
+Value: warning   Column: qwen2.5-1.5b|esc_fake_ign
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.8300 [0.7954, 0.8588]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.9575 [0.9473, 0.9655]
+  AUROC                     0.9150 [0.8977, 0.9294]
+
+Value: datamark   Column: qwen2.5-1.5b|naive
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.2400 [0.2052, 0.2794]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.8100 [0.7873, 0.8366]
+  AUROC                     0.6200 [0.6026, 0.6397]
+
+Value: datamark   Column: qwen2.5-1.5b|escape
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.4317 [0.3920, 0.4735]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.8579 [0.8377, 0.8773]
+  AUROC                     0.7158 [0.6960, 0.7368]
+
+Value: datamark   Column: qwen2.5-1.5b|fake
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.2533 [0.2187, 0.2881]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.8133 [0.7885, 0.8365]
+  AUROC                     0.6267 [0.6093, 0.6440]
+
+Value: datamark   Column: qwen2.5-1.5b|ignore
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.3683 [0.3282, 0.4068]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.8421 [0.8217, 0.8636]
+  AUROC                     0.6842 [0.6641, 0.7034]
+
+Value: datamark   Column: qwen2.5-1.5b|esc_fake
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.3333 [0.2941, 0.3730]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.8333 [0.8101, 0.8554]
+  AUROC                     0.6667 [0.6471, 0.6865]
+
+Value: datamark   Column: qwen2.5-1.5b|esc_fake_ign
+  threshold                 0.5
+  test rows                 800
+  positive rows             600 (75.00%)
+  negative rows             200 (25.00%)
+  bootstrap resamples       1000
+  random-scorer AP          0.7500 (equals the positive share)
+  random-scorer AUROC       0.5000
+  precision                 1.0000 [1.0000, 1.0000]
+  recall                    0.2300 [0.1974, 0.2618]
+  false-positive rate       0.0000 [0.0000, 0.0000]
+  AP                        0.8075 [0.7842, 0.8315]
+  AUROC                     0.6150 [0.5987, 0.6309]
+
+Results table: recall [95% interval] (copy into section 1(d))
+-------------------------------------------------------------
+A one-class cell holds the metric the checker prints for it, named in parentheses.
+
+Column: qwen2.5-0.5b|naive
+  none         0.5533 [0.5116, 0.5908]
+  restate      0.2233 [0.1917, 0.2588]
+  delimiters   0.6133 [0.5747, 0.6489]
+  warning      0.6650 [0.6289, 0.7036]
+  datamark     0.0083 [0.0017, 0.0162]
+
+Column: qwen2.5-0.5b|escape
+  none         0.6600 [0.6252, 0.6981]
+  restate      0.3250 [0.2890, 0.3597]
+  delimiters   0.5817 [0.5405, 0.6172]
+  warning      0.7717 [0.7364, 0.8036]
+  datamark     0.0067 [0.0016, 0.0134]
+
+Column: qwen2.5-0.5b|fake
+  none         0.7983 [0.7679, 0.8292]
+  restate      0.1817 [0.1493, 0.2123]
+  delimiters   0.7800 [0.7459, 0.8136]
+  warning      0.8400 [0.8125, 0.8696]
+  datamark     0.0550 [0.0381, 0.0740]
+
+Column: qwen2.5-0.5b|ignore
+  none         0.9200 [0.8990, 0.9415]
+  restate      0.4717 [0.4293, 0.5115]
+  delimiters   0.7850 [0.7529, 0.8183]
+  warning      0.9183 [0.8956, 0.9394]
+  datamark     0.0783 [0.0571, 0.0997]
+
+Column: qwen2.5-0.5b|esc_fake
+  none         0.9383 [0.9187, 0.9583]
+  restate      0.1883 [0.1584, 0.2205]
+  delimiters   0.7533 [0.7157, 0.7881]
+  warning      0.9133 [0.8900, 0.9353]
+  datamark     0.0833 [0.0646, 0.1083]
+
+Column: qwen2.5-0.5b|esc_fake_ign
+  none         0.9567 [0.9387, 0.9723]
+  restate      0.4617 [0.4194, 0.4984]
+  delimiters   0.9750 [0.9620, 0.9852]
+  warning      0.9500 [0.9323, 0.9671]
+  datamark     0.0417 [0.0269, 0.0584]
+
+Column: qwen2.5-1.5b|naive
+  none         0.1550 [0.1262, 0.1856]
+  restate      0.1217 [0.0983, 0.1496]
+  delimiters   0.2600 [0.2260, 0.2948]
+  warning      0.3417 [0.3033, 0.3768]
+  datamark     0.2400 [0.2052, 0.2794]
+
+Column: qwen2.5-1.5b|escape
+  none         0.1567 [0.1276, 0.1858]
+  restate      0.1200 [0.0941, 0.1475]
+  delimiters   0.2583 [0.2265, 0.2908]
+  warning      0.3850 [0.3478, 0.4242]
+  datamark     0.4317 [0.3920, 0.4735]
+
+Column: qwen2.5-1.5b|fake
+  none         0.2383 [0.2056, 0.2723]
+  restate      0.0383 [0.0230, 0.0542]
+  delimiters   0.3350 [0.2936, 0.3744]
+  warning      0.5533 [0.5128, 0.5917]
+  datamark     0.2533 [0.2187, 0.2881]
+
+Column: qwen2.5-1.5b|ignore
+  none         0.2583 [0.2239, 0.2933]
+  restate      0.1650 [0.1352, 0.1953]
+  delimiters   0.2767 [0.2412, 0.3127]
+  warning      0.5100 [0.4679, 0.5482]
+  datamark     0.3683 [0.3282, 0.4068]
+
+Column: qwen2.5-1.5b|esc_fake
+  none         0.5217 [0.4803, 0.5613]
+  restate      0.0500 [0.0339, 0.0681]
+  delimiters   0.5000 [0.4605, 0.5399]
+  warning      0.6683 [0.6311, 0.7070]
+  datamark     0.3333 [0.2941, 0.3730]
+
+Column: qwen2.5-1.5b|esc_fake_ign
+  none         0.7350 [0.6971, 0.7698]
+  restate      0.1150 [0.0898, 0.1426]
+  delimiters   0.6200 [0.5815, 0.6611]
+  warning      0.8300 [0.7954, 0.8588]
+  datamark     0.2300 [0.1974, 0.2618]
+
+Difference from the baseline value 'none' (copy into section 1(e))
+------------------------------------------------------------------
+Difference = the value's metric minus the baseline value's metric in the same column.
+Direction of interest: lower. Change = the difference with its sign flipped, so a drop is positive.
+The verdict in section 1(e) compares the change with your yes and no differences.
+
+Column: qwen2.5-0.5b|naive
+  restate      difference -0.3300   change +0.3300 (recall)
+  delimiters   difference +0.0600   change -0.0600 (recall)
+  warning      difference +0.1117   change -0.1117 (recall)
+  datamark     difference -0.5450   change +0.5450 (recall)
+
+Column: qwen2.5-0.5b|escape
+  restate      difference -0.3350   change +0.3350 (recall)
+  delimiters   difference -0.0783   change +0.0783 (recall)
+  warning      difference +0.1117   change -0.1117 (recall)
+  datamark     difference -0.6533   change +0.6533 (recall)
+
+Column: qwen2.5-0.5b|fake
+  restate      difference -0.6167   change +0.6167 (recall)
+  delimiters   difference -0.0183   change +0.0183 (recall)
+  warning      difference +0.0417   change -0.0417 (recall)
+  datamark     difference -0.7433   change +0.7433 (recall)
+
+Column: qwen2.5-0.5b|ignore
+  restate      difference -0.4483   change +0.4483 (recall)
+  delimiters   difference -0.1350   change +0.1350 (recall)
+  warning      difference -0.0017   change +0.0017 (recall)
+  datamark     difference -0.8417   change +0.8417 (recall)
+
+Column: qwen2.5-0.5b|esc_fake
+  restate      difference -0.7500   change +0.7500 (recall)
+  delimiters   difference -0.1850   change +0.1850 (recall)
+  warning      difference -0.0250   change +0.0250 (recall)
+  datamark     difference -0.8550   change +0.8550 (recall)
+
+Column: qwen2.5-0.5b|esc_fake_ign
+  restate      difference -0.4950   change +0.4950 (recall)
+  delimiters   difference +0.0183   change -0.0183 (recall)
+  warning      difference -0.0067   change +0.0067 (recall)
+  datamark     difference -0.9150   change +0.9150 (recall)
+
+Column: qwen2.5-1.5b|naive
+  restate      difference -0.0333   change +0.0333 (recall)
+  delimiters   difference +0.1050   change -0.1050 (recall)
+  warning      difference +0.1867   change -0.1867 (recall)
+  datamark     difference +0.0850   change -0.0850 (recall)
+
+Column: qwen2.5-1.5b|escape
+  restate      difference -0.0367   change +0.0367 (recall)
+  delimiters   difference +0.1017   change -0.1017 (recall)
+  warning      difference +0.2283   change -0.2283 (recall)
+  datamark     difference +0.2750   change -0.2750 (recall)
+
+Column: qwen2.5-1.5b|fake
+  restate      difference -0.2000   change +0.2000 (recall)
+  delimiters   difference +0.0967   change -0.0967 (recall)
+  warning      difference +0.3150   change -0.3150 (recall)
+  datamark     difference +0.0150   change -0.0150 (recall)
+
+Column: qwen2.5-1.5b|ignore
+  restate      difference -0.0933   change +0.0933 (recall)
+  delimiters   difference +0.0183   change -0.0183 (recall)
+  warning      difference +0.2517   change -0.2517 (recall)
+  datamark     difference +0.1100   change -0.1100 (recall)
+
+Column: qwen2.5-1.5b|esc_fake
+  restate      difference -0.4717   change +0.4717 (recall)
+  delimiters   difference -0.0217   change +0.0217 (recall)
+  warning      difference +0.1467   change -0.1467 (recall)
+  datamark     difference -0.1883   change +0.1883 (recall)
+
+Column: qwen2.5-1.5b|esc_fake_ign
+  restate      difference -0.6200   change +0.6200 (recall)
+  delimiters   difference -0.1150   change +0.1150 (recall)
+  warning      difference +0.0950   change -0.0950 (recall)
+  datamark     difference -0.5050   change +0.5050 (recall)
+
+Error sample (section 4)
+------------------------
+Value: none   Column: qwen2.5-1.5b|esc_fake_ign
+  misclassified rows available   0 false positives, 159 false negatives
+  sampled                        0 false positives, 10 false negatives
+
+error               false positive  false negative  total
+category                                                 
+answered correctly               0               9      9
+wrong answer                     0               1      1
+
+Warnings
+--------
+- split.csv has no train rows. Every model needs a training set and a validation set.
+- value none, column qwen2.5-0.5b|naive: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value none, column qwen2.5-0.5b|naive: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value none, column qwen2.5-0.5b|escape: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value none, column qwen2.5-0.5b|escape: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value none, column qwen2.5-0.5b|fake: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value none, column qwen2.5-0.5b|fake: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value none, column qwen2.5-0.5b|ignore: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value none, column qwen2.5-0.5b|ignore: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value none, column qwen2.5-0.5b|esc_fake: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value none, column qwen2.5-0.5b|esc_fake: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value none, column qwen2.5-0.5b|esc_fake_ign: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value none, column qwen2.5-0.5b|esc_fake_ign: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value restate, column qwen2.5-0.5b|naive: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value restate, column qwen2.5-0.5b|naive: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value restate, column qwen2.5-0.5b|escape: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value restate, column qwen2.5-0.5b|escape: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value restate, column qwen2.5-0.5b|fake: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value restate, column qwen2.5-0.5b|fake: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value restate, column qwen2.5-0.5b|ignore: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value restate, column qwen2.5-0.5b|ignore: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value restate, column qwen2.5-0.5b|esc_fake: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value restate, column qwen2.5-0.5b|esc_fake: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value restate, column qwen2.5-0.5b|esc_fake_ign: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value restate, column qwen2.5-0.5b|esc_fake_ign: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value delimiters, column qwen2.5-0.5b|naive: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value delimiters, column qwen2.5-0.5b|naive: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value delimiters, column qwen2.5-0.5b|escape: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value delimiters, column qwen2.5-0.5b|escape: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value delimiters, column qwen2.5-0.5b|fake: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value delimiters, column qwen2.5-0.5b|fake: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value delimiters, column qwen2.5-0.5b|ignore: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value delimiters, column qwen2.5-0.5b|ignore: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value delimiters, column qwen2.5-0.5b|esc_fake: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value delimiters, column qwen2.5-0.5b|esc_fake: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value delimiters, column qwen2.5-0.5b|esc_fake_ign: precision, AP at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value delimiters, column qwen2.5-0.5b|esc_fake_ign: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value warning, column qwen2.5-0.5b|naive: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value warning, column qwen2.5-0.5b|naive: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value warning, column qwen2.5-0.5b|escape: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value warning, column qwen2.5-0.5b|escape: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value warning, column qwen2.5-0.5b|fake: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value warning, column qwen2.5-0.5b|fake: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value warning, column qwen2.5-0.5b|ignore: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value warning, column qwen2.5-0.5b|ignore: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value warning, column qwen2.5-0.5b|esc_fake: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value warning, column qwen2.5-0.5b|esc_fake: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value warning, column qwen2.5-0.5b|esc_fake_ign: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value warning, column qwen2.5-0.5b|esc_fake_ign: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value datamark, column qwen2.5-0.5b|naive: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value datamark, column qwen2.5-0.5b|naive: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value datamark, column qwen2.5-0.5b|escape: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value datamark, column qwen2.5-0.5b|escape: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value datamark, column qwen2.5-0.5b|fake: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value datamark, column qwen2.5-0.5b|fake: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value datamark, column qwen2.5-0.5b|ignore: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value datamark, column qwen2.5-0.5b|ignore: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value datamark, column qwen2.5-0.5b|esc_fake: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value datamark, column qwen2.5-0.5b|esc_fake: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value datamark, column qwen2.5-0.5b|esc_fake_ign: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value datamark, column qwen2.5-0.5b|esc_fake_ign: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value none, column qwen2.5-1.5b|naive: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value none, column qwen2.5-1.5b|naive: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value none, column qwen2.5-1.5b|escape: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value none, column qwen2.5-1.5b|escape: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value none, column qwen2.5-1.5b|fake: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value none, column qwen2.5-1.5b|fake: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value none, column qwen2.5-1.5b|ignore: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value none, column qwen2.5-1.5b|ignore: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value none, column qwen2.5-1.5b|esc_fake: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value none, column qwen2.5-1.5b|esc_fake: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value none, column qwen2.5-1.5b|esc_fake_ign: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value none, column qwen2.5-1.5b|esc_fake_ign: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value restate, column qwen2.5-1.5b|naive: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value restate, column qwen2.5-1.5b|naive: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value restate, column qwen2.5-1.5b|escape: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value restate, column qwen2.5-1.5b|escape: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value restate, column qwen2.5-1.5b|fake: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value restate, column qwen2.5-1.5b|fake: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value restate, column qwen2.5-1.5b|ignore: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value restate, column qwen2.5-1.5b|ignore: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value restate, column qwen2.5-1.5b|esc_fake: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value restate, column qwen2.5-1.5b|esc_fake: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value restate, column qwen2.5-1.5b|esc_fake_ign: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value restate, column qwen2.5-1.5b|esc_fake_ign: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value delimiters, column qwen2.5-1.5b|naive: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value delimiters, column qwen2.5-1.5b|naive: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value delimiters, column qwen2.5-1.5b|escape: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value delimiters, column qwen2.5-1.5b|escape: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value delimiters, column qwen2.5-1.5b|fake: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value delimiters, column qwen2.5-1.5b|fake: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value delimiters, column qwen2.5-1.5b|ignore: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value delimiters, column qwen2.5-1.5b|ignore: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value delimiters, column qwen2.5-1.5b|esc_fake: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value delimiters, column qwen2.5-1.5b|esc_fake: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value delimiters, column qwen2.5-1.5b|esc_fake_ign: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value delimiters, column qwen2.5-1.5b|esc_fake_ign: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value warning, column qwen2.5-1.5b|naive: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value warning, column qwen2.5-1.5b|naive: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value warning, column qwen2.5-1.5b|escape: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value warning, column qwen2.5-1.5b|escape: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value warning, column qwen2.5-1.5b|fake: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value warning, column qwen2.5-1.5b|fake: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value warning, column qwen2.5-1.5b|ignore: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value warning, column qwen2.5-1.5b|ignore: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value warning, column qwen2.5-1.5b|esc_fake: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value warning, column qwen2.5-1.5b|esc_fake: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value warning, column qwen2.5-1.5b|esc_fake_ign: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value warning, column qwen2.5-1.5b|esc_fake_ign: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value datamark, column qwen2.5-1.5b|naive: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value datamark, column qwen2.5-1.5b|naive: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value datamark, column qwen2.5-1.5b|escape: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value datamark, column qwen2.5-1.5b|escape: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value datamark, column qwen2.5-1.5b|fake: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value datamark, column qwen2.5-1.5b|fake: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value datamark, column qwen2.5-1.5b|ignore: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value datamark, column qwen2.5-1.5b|ignore: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value datamark, column qwen2.5-1.5b|esc_fake: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value datamark, column qwen2.5-1.5b|esc_fake: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
+- value datamark, column qwen2.5-1.5b|esc_fake_ign: precision at or above 0.99. Name the leakage check you ran and its result in section 1(c).
+- value datamark, column qwen2.5-1.5b|esc_fake_ign: the score column has only 2 distinct values. Write the classifier's score or probability, not its predicted label.
